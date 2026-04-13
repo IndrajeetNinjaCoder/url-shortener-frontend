@@ -4,7 +4,7 @@ import { CopyButton } from "../ui/CopyButton";
 import { timeAgo } from "../../utils/formatDate";
 import { useToast } from "../ui/Toast";
 
-const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 function truncate(str, n = 40) {
   return str?.length > n ? str.slice(0, n) + "…" : str;
