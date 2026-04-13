@@ -8,7 +8,7 @@ import { Loader } from "../components/ui/Loader";
 import { useAuth } from "../hooks/useAuth";
 import { useLinks } from "../hooks/useLinks";
 
-const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 const FEATURES = [
   { icon: "⚡", title: "Lightning fast", desc: "Redis-powered redirects in under 10ms. Your users never wait." },
