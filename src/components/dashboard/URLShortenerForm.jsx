@@ -34,7 +34,8 @@ export function URLShortenerForm({ onSuccess, compact = false }) {
       if (oneTime) payload.oneTime = true;
 
       const data = await urlService.shorten(payload);
-      onSuccess?.(data);
+      // Pass the original URL along with the API response
+      onSuccess?.({ ...data, originalUrl: url });
       setUrl("");
       setCustomAlias("");
       setExpiryType("");

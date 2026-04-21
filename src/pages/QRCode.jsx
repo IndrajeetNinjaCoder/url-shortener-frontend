@@ -5,7 +5,7 @@ import { QRGenerator, QRFromBase64, QRDownloadButton } from "../components/dashb
 import { CopyButton } from "../components/ui/CopyButton";
 import { useLinks } from "../hooks/useLinks";
 
-const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 export default function QRCodePage() {
   const [searchParams] = useSearchParams();
